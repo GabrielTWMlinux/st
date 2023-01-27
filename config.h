@@ -8,7 +8,7 @@
 
 static char *font = "Inconsolata:pixelsize=21:antialias=true:autohint=true";
 static char *font2[] = { "NotoColorEmoji:pixelsize=18:antialias=true:autohint=true" };
-static int borderpx = 8;
+static int borderpx = 7;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -28,8 +28,8 @@ char *stty_args = "stty raw pass8 nl -echo -iexten -cstopb 38400";
 char *vtiden = "\033[?6c";
 
 /* Kerning / character bounding-box multipliers */
-static float cwscale = 1.0;
-static float chscale = 1.19;
+static float cwscale = 1;
+static float chscale = 1.17;
 
 /*
  * word delimiter string
@@ -96,7 +96,7 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 0.8;
+float alpha = 0.88;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
@@ -126,7 +126,7 @@ static const char *colorname[] = {
 	"#ffffff",
 	"#000000",
 	"#FFFFFF", /* default foreground colour */
-	"#111118", /* default background colour */
+	"#0d0d12", /* default background colour */
 };
 
 
